@@ -61,7 +61,63 @@ y nuestra vision es ser reconocidos como líderes en la industria de jugos y agu
      <p>Los jugos y aguas de San Sebastian son mi elección favorita. Me encanta
         <h3>cisneros fernandez</h3>
         <p>Los productos de San Sebastian son excepcionales. La calidad y el sabor son incomparables. Siempre disfruto de cada sorbo y me siento satisfecho con mi elección. ¡Definitivamente seguiré siendo cliente!</p>
-        
+        <div class="form-container">
+    <div class="form-header">
+      <h2>🥤 Haz tu Pedido de Jugos</h2>
+      <p>Déjanos tus datos y nos pondremos en contacto contigo de inmediato.</p>
+    </div>
+
+    <form action="#" method="POST">
+      <!-- Nombre -->
+      <div class="form-group">
+        <label for="nombre">Nombre Completo *</label>
+        <input type="text" id="nombre" name="nombre"  required>
+      </div>
+
+      <!-- Contacto -->
+      <div class="form-group">
+        <label for="telefono">Teléfono / WhatsApp *</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" >
+      </div>
+
+      <!-- Selección de Productos -->
+      <div class="form-group">
+        <label>¿Qué sabores te interesan?</label>
+        <div class="checkbox-group">
+          <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="naranja"> Naranja 🍊</label>
+          <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="verde"> Verde Detox 🍏</label>
+          <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="zanahoria"> Zanahoria 🥕</label>
+          <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="fresa-kiwi"> Fresa Kiwi 🍓</label>
+        </div>
+      </div>
+
+      <!-- Tipo de cliente/pedido -->
+      <div class="form-group">
+        <label for="tipo-pedido">Tipo de Pedido</label>
+        <select id="tipo-pedido" name="tipo_pedido">
+          <option value="individual">Consumo Personal / Menudeo</option>
+          <option value="evento">Eventos / Banquetes</option>
+          <option value="mayoreo">Mayoreo / Distribución</option>
+        </select>
+      </div>
+
+      <!-- Mensaje adicional -->
+      <div class="form-group">
+        <label for="mensaje">Detalles adicionales o dirección de entrega</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí la cantidad estimada, dirección de entrega o cualquier duda..."></textarea>
+      </div>
+
+      <!-- Botón de envío -->
+      <button type="submit" class="btn-submit">Enviar Pedido</button>
+    </form>
+  </div>
+  
+
 
 </body>
 </html>
