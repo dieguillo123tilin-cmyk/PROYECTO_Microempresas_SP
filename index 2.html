@@ -1,101 +1,321 @@
-
-<nav class="main-nav">
-    <a href="#quienes-somos">Quiénes Somos</a>
-    <a href="#mision-vision">Misión y Visión</a>
-    <a href="#productos">Productos</a>
-    <a href="#precios">Precios</a>
-    <a href="#multimedia">Multimedia</a>
-    <a href="#ubicacion">Ubicación</a>
-    <a href="#pedido">Pedidos</a>
-    <a href="#legal">Aviso Legal</a>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="style.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugos y Aguas "San Sebastián" | Empresa de Bebidas Naturales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-</nav>
+<body>
 
-<div class="table-container">
-    <table class="price-table">
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Presentación</th>
-                <th>Ingredientes / Detalle</th>
-                <th>Precio (MXN)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Jugo de Naranja 🍊</td>
-                <td>500 ml / 1 L</td>
-                <td>100% Jugo natural recién exprimido</td>
-                <td>$35.00 / $60.00</td>
-            </tr>
-            <tr>
-                <td>Verde Detox 🍏</td>
-                <td>500 ml</td>
-                <td>Manzana verde, apio, nopal, piña y limón</td>
-                <td>$40.00</td>
-            </tr>
-            <tr>
-                <td>Jugo de Zanahoria 🥕</td>
-                <td>500 ml / 1 L</td>
-                <td>Zanahoria fresca natural sin azúcar añadida</td>
-                <td>$35.00 / $60.00</td>
-            </tr>
-            <tr>
-                <td>Fresa Kiwi 🍓</td>
-                <td>500 ml</td>
-                <td>Infusión natural de fresas y kiwi fresco</td>
-                <td>$45.00</td>
-            </tr>
-            <tr>
-                <td>Agua Mineralizada Saborizada 💧</td>
-                <td>600 ml</td>
-                <td>Agua de manantial mineralizada con infusión frutal</td>
-                <td>$25.00</td>
-            </tr>
-            <tr>
-                <td>Bebida Energética Natural ⚡</td>
-                <td>500 ml</td>
-                <td>Base de guaraná, jengibre, miel y jugo de cítricos</td>
-                <td>$50.00</td>
-            </tr>
-            <tr>
-                <td>Snacks Saludables 🍏</td>
-                <td>Porción (150g)</td>
-                <td>Mix de frutos secos, deshidratados y botanas integrales</td>
-                <td>$30.00</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div class="multimedia-container">
-    <div class="media-box">
-        <h3>🎬 Video Promocional</h3>
-        <video controls poster="https://cmvplus.com/wp-content/uploads/2024/11/Jugos-energizantes-naturales-1024x585.jpg" width="100%">
-            <source src="video-promocional.mp4" type="video/mp4">
-            <source src="video-promocional.webm" type="video/webm">
-            Tu navegador no soporta la reproducción de video HTML5.
-        </video>
-    </div>
-
-    <div class="media-box">
-        <h3>🎵 Spot de Radio / Audio Publicitario</h3>
-        <audio controls style="width: 100%;">
-            <source src="spot-san-sebastian.mp3" type="audio/mpeg">
-            <source src="spot-san-sebastian.ogg" type="audio/ogg">
-            Tu navegador no soporta la reproducción de audio HTML5.
-        </audio>
-    </div>
-
-    <div class="media-box">
-        <h3>📺 Presentación Institucional (iFrame Video)</h3>
-        <div class="iframe-responsive">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Video Institucional Jugos San Sebastián" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Encabezado Principal / Hero con Anclas de Navegación -->
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Jugos y Aguas "San Sebastián"</h1>
+            <p class="hero-subtitle">El sabor natural en cada sorbo. Productos 100% naturales, frescos y mineralizados.</p>
+            <nav class="main-nav">
+                <a href="#quienes-somos">Quiénes Somos</a>
+                <a href="#mision-vision">Misión y Visión</a>
+                <a href="#productos">Productos</a>
+                <a href="#precios">Precios</a>
+                <a href="#multimedia">Multimedia</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#pedido">Pedidos</a>
+                <a href="#legal">Aviso Legal</a>
+            </nav>
         </div>
-    </div>
-</div>
+    </header>
 
-<div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661601662584!2d-99.1686936850934!3d19.42702498688753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2
+    <main class="container">
+
+        <!-- Sección Quiénes Somos (Texto original conservado) -->
+        <section class="card" id="quienes-somos">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos una empresa (desarrollada por un grupo de estudiantes) dedicada a ofrecer los mejores jugos naturales y aguas mineralizadas de la región. <br> 
+            Nuestra misión es proporcionar productos de alta calidad que reflejen el sabor auténtico de los ingredientes seleccionados. <br>
+            Mas aparte dentro de nuestra filosofía de negocio, nos comprometemos a utilizar ingredientes frescos y sostenibles para garantizar la mejor experiencia para nuestros clientes. <br>
+            En San Sebastian (colonia) hemos notado la gran ausencia de emprendedores dedicados asi que decidimos crear esta empresa para satisfacer la necesidad de productos naturales de calidad en nuestra comunidad. <br>
+            Nuestro equipo está compuesto por personas apasionadas por la salud y el bienestar, comprometidas a ofrecer productos de la más alta calidad. Osea:<br></p>
+            
+            <h3>Nuestro Equipo de Trabajo</h3>
+            <ol class="team-list">
+                <li>Alex Yael Cervantes Rojo - SCRUM master y desarollador</li>
+                <li>Josue Martinez Santizo - Desarrollador de pagina</li>
+                <li>Abrahaml Morales Ildelfonso - Desarrollador de pagina</li>
+                <li>Fernandez Correa Diego - Desarrollador y diseñador de pagina</li>
+            </ol>
+            <p><a href="#inicio" class="back-to-top">↑ Volver al inicio</a></p>
+        </section>
+
+        <!-- Misión y Visión (Conservando los textos originales) -->
+        <section class="card grid-2" id="mision-vision">
+            <div class="info-box">
+                <h2>Nuestra Misión</h2>
+                <p>Nuestra mision es ofrecer productos de alta calidad que reflejen el sabor auténtico de los ingredientes seleccionados. <br>
+                Mas aparte dentro de nuestra filosofía de negocio, nos comprometemos a utilizar ingredientes frescos y sostenibles para garantizar la mejor experiencia para nuestros clientes. <br>
+                En San Sebastian (colonia) hemos notado la gran ausencia de emprendedores dedicados asi que decidimos crear esta empresa para satisfacer la necesidad de productos naturales de calidad en nuestra comunidad. <br>
+                Nuestro equipo está compuesto por personas apasionadas por la salud y el bienestar, comprometidas a ofrecer productos de la más alta calidad.</p>
+            </div>
+            <div class="info-box">
+                <h2>Nuestra Visión</h2>
+                <p>Y nuestra vision es ser reconocidos como líderes en la industria de jugos y aguas mineralizadas, destacando por nuestra innovación, calidad y compromiso con la salud y el bienestar de nuestros clientes.</p>
+            </div>
+        </section>
+
+        <!-- Catálogo de Productos y Servicios -->
+        <section class="card" id="productos">
+            <h2>Nuestros Productos y Servicios</h2>
+            <ul class="services-list">
+                <li>Jugos naturales</li>
+                <li>Aguas mineralizadas</li>
+                <li>Bebidas energéticas naturales</li>
+                <li>Snacks saludables</li>
+                <li>Productos de cuidado personal naturales</li>
+            </ul>
+        </section>
+
+        <!-- Tabla Profesional de Precios y Presentaciones -->
+        <section class="card" id="precios">
+            <h2>Menú Oficial y Lista de Precios</h2>
+            <p>Consulta nuestro catálogo con costos y presentaciones al público:</p>
+            <div class="table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Presentación</th>
+                            <th>Descripción</th>
+                            <th>Precio (MXN)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jugo Natural 🍊</td>
+                            <td>500 ml / 1 Litro</td>
+                            <td>Fruta 100% fresca de temporada</td>
+                            <td>$35.00 / $60.00</td>
+                        </tr>
+                        <tr>
+                            <td>Aguas Mineralizadas 💧</td>
+                            <td>600 ml</td>
+                            <td>Agua de manantial mineralizada con toque frutal</td>
+                            <td>$25.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bebidas Energéticas ⚡</td>
+                            <td>500 ml</td>
+                            <td>Energizante natural a base de guaraná y miel</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Snacks Saludables 🍏</td>
+                            <td>Porción (150g)</td>
+                            <td>Mix de frutos secos y semillas orgánicas</td>
+                            <td>$30.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cuidado Personal 🌿</td>
+                            <td>Pieza</td>
+                            <td>Productos naturales artesanales</td>
+                            <td>$45.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a href="#pedido" class="btn-anchor">Ir al formulario de pedidos</a></p>
+        </section>
+
+        <!-- Afiliados y Clientes (Texto original adaptado a empresarial) -->
+        <section class="card" id="afiliados">
+            <h2>Afiliados</h2>
+            <h2>Empresas y Clientes</h2>
+            <ul class="affiliates-list">
+                <li>NATHALY NAILS Empresa aliada: sebas mauricio bere angel camila</li>
+                <li>Clientes: alex</li>
+                <li>Clientes: pobre moto (yerik)</li>
+                <li>Clientes: angel alias añeñin</li>
+                <li>Clientes: cisneros fernandez (el profe)</li>
+            </ul>
+        </section>
+
+        <!-- Galería de Productos (Con imágenes originales) -->
+        <section class="card">
+            <h2>Galería de Productos</h2>
+            <div class="gallery-grid">
+                <img src="https://th.bing.com/th/id/R.60063bd41c1070c047b191c683f5b3ae?rik=hPcbnPAhjOh%2btA&pid=ImgRaw&r=0" alt="Jugo San Sebastian">
+                <img src="https://cmvplus.com/wp-content/uploads/2024/11/Jugos-energizantes-naturales-1024x585.jpg" alt="Jugos energizantes naturales">
+                <img src="https://i.pinimg.com/originals/b3/3c/24/b33c24ddd7c4fe45f4bb6f71d37e32e1.jpg" alt="Bebidas naturales">
+                <img src="https://i.pinimg.com/originals/2c/1f/29/2c1f29830fc4a589353a7169e17f8401.jpg" alt="Frutas y estilo de vida">
+            </div>
+        </section>
+
+        <!-- Sección Multimedia (Videos corporativos e iframes) -->
+        <section class="card" id="multimedia">
+            <h2>Sección Multimedia e Institucional</h2>
+            <div class="multimedia-container">
+                <div class="media-box">
+                    <h3>🎬 Video Promocional</h3>
+                    <video controls poster="https://cmvplus.com/wp-content/uploads/2024/11/Jugos-energizantes-naturales-1024x585.jpg" width="100%">
+                        <source src="video-promocional.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video HTML5.
+                    </video>
+                </div>
+
+                <div class="media-box">
+                    <h3>🎵 Spot Publicitario (Audio)</h3>
+                    <audio controls style="width: 100%;">
+                        <source src="spot-san-sebastian.mp3" type="audio/mpeg">
+                        Tu navegador no soporta la reproducción de audio HTML5.
+                    </audio>
+                </div>
+
+                <div class="media-box">
+                    <h3>📺 Presentación en iFrame</h3>
+                    <div class="iframe-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Video Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación en Mapa (iFrame Google Maps) -->
+        <section class="card" id="ubicacion">
+            <h2>Nuestra Ubicación</h2>
+            <p>Conoce dónde nos encontramos ubicados en nuestra comunidad:</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661601662584!2d-99.1686936850934!3d19.42702498688753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" title="Ubicación San Sebastián"></iframe>
+            </div>
+        </section>
+
+        <!-- Opiniones de Clientes (Textos originales conservados) -->
+        <section class="card" id="testimonios">
+            <h2>OPINIONES DE NUESTROS CLIENTES</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h3>Pobre moto</h3>
+                    <p>Me encantan los jugos y aguas de San Sebastian. Son frescos, naturales y tienen un sabor increíble. Siempre me siento revitalizado después de probar sus productos. ¡Recomendado!</p>
+                </div>
+                <div class="review-card">
+                    <h3>Angel alias añeñin</h3>
+                    <p>Los jugos y aguas de San Sebastian son mi elección favorita. Me encanta la frescura y calidad.</p>
+                </div>
+                <div class="review-card">
+                    <h3>Cisneros fernandez</h3>
+                    <p>Los productos de San Sebastian son excepcionales. La calidad y el sabor son incomparables. Siempre disfruto de cada sorbo y me siento satisfecho con mi elección. ¡Definitivamente seguiré siendo cliente!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Pedidos Original -->
+        <div class="form-container" id="pedido">
+            <div class="form-header">
+                <h2>🥤 Haz tu Pedido de Jugos</h2>
+                <p>Déjanos tus datos y nos pondremos en contacto contigo de inmediato.</p>
+            </div>
+
+            <form action="#" method="POST">
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <!-- Contacto -->
+                <div class="form-group grid-2-input">
+                    <div>
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <!-- Selección de Productos -->
+                <div class="form-group">
+                    <label>¿Qué sabores te interesan?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="naranja"> Naranja 🍊</label>
+                        <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="verde"> Verde Detox 🍏</label>
+                        <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="zanahoria"> Zanahoria 🥕</label>
+                        <label class="checkbox-item"><input type="checkbox" name="sabores[]" value="fresa-kiwi"> Fresa Kiwi 🍓</label>
+                    </div>
+                </div>
+
+                <!-- Tipo de cliente/pedido -->
+                <div class="form-group">
+                    <label for="tipo-pedido">Tipo de Pedido</label>
+                    <select id="tipo-pedido" name="tipo_pedido">
+                        <option value="individual">Consumo Personal / Menudeo</option>
+                        <option value="evento">Eventos / Banquetes</option>
+                        <option value="mayoreo">Mayoreo / Distribución</option>
+                    </select>
+                </div>
+
+                <!-- Mensaje adicional -->
+                <div class="form-group">
+                    <label for="mensaje">Detalles adicionales o dirección de entrega</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí la cantidad estimada, dirección de entrega o cualquier duda..."></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="btn-submit">Enviar Pedido</button>
+            </form>
+        </div>
+
+        <!-- Redes Sociales Originales -->
+        <h2>Para conocer más sobre nuestros productos y servicios, siguenos en nuestras redes sociales</h2>
+        <div class="social-links" id="redes">
+            <a href="https://www.instagram.com/moralesildf/" target="_blank" class="social-btn instagram">
+                <img src="Instagram_logo_2022.svg.webp" width="30" height="30" alt="Instagram"> nuesro servidorL
+            </a>
+            <a href="https://www.tiktok.com/@abraham.morales815" target="_blank" class="social-btn tiktok">
+                <img src="tik tok.png" width="30" height="30" alt="TikTok"> nuesro servidorL
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100080778141509&locale=es_LA" target="_blank" class="social-btn facebook">
+                <img src="facebook.png" width="30" height="30" alt="Facebook"> nuesro servidorL
+            </a>
+        </div>
+
+        <!-- Aviso Legal Original -->
+        <div class="contenedor" id="legal">
+            <h1>Aviso Legal</h1>
+
+            <h2>Aviso de Privacidad</h2>
+            <p>
+                Protegemos la información personal de nuestros
+                usuarios y no compartimos sus datos sin autorización
+                o una base legal válida.
+            </p>
+
+            <h2>Términos y Condiciones</h2>
+            <p>
+                Al utilizar este sitio web, aceptas sus condiciones
+                de uso. Está prohibido utilizarlo para actividades
+                ilegales o dañar su funcionamiento.
+            </p>
+
+            <h2>Protección de Datos</h2>
+            <p>
+                Los usuarios pueden solicitar información,
+                corrección o eliminación de sus datos conforme
+                a la legislación aplicable.
+            </p>
+
+            <h2>Contacto</h2>
+            <p>Correo: <a href="mailto:abraham.morales815@gmail.com">abraham.morales815@gmail.com</a></p>
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Jugos y Aguas "San Sebastián" — Todos los derechos reservados. | <a href="#inicio" style="color: white;">Ir arriba</a>
+    </footer>
+
+</body>
+</html>
